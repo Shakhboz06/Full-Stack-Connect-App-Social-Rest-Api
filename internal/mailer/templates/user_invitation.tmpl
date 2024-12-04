@@ -1,0 +1,25 @@
+{{define "subject"}}Finish Registration with ConnectApp Social {{end}}
+
+
+{{define "Body"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>ConnectApp Mail</title>
+</head>
+
+<body>
+    <p>Hi {{.Username}},</p>
+
+    <p>Thank you for signing up with ConnectApp platform. We are excited to see you on board!</p>
+    <p>Before starting to use the App please confirm your email address. Click the link below to confirm your email
+        address:</p>
+    <p><a href="{{.ActivationURL}}">{{.ActivationURL}}</a></p>
+    <p>Best Regards</p>
+    <p>Your ConnectApp Team</p>
+
+</body>
+</html>
+{{end}}
