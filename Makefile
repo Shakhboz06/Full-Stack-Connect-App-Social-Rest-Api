@@ -3,7 +3,7 @@ include .envrc
 
 # Define paths and database address
 MIGRATIONS_PATH = ./cmd/migrate/migrations
-DB_ADDR = postgres://admin:adminpassword@localhost:5432/app?sslmode=disable
+# DB_ADDR = postgres://admin:adminpassword@localhost:5432/app?sslmode=disable
 DOCKER_MIGRATE = docker run --rm -v "$(CURDIR)/cmd/migrate/migrations:/migrations" --network="host" migrate/migrate:latest
 
 .PHONY: test

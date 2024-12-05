@@ -62,7 +62,7 @@ func main() {
 				pass: env.GetString("AUTH_BASIC_PASS", "admin"),
 			},
 			token: tokenConfig{
-				secret: env.GetString("AUTH_TOKEN_SECRETS", "example"),
+				secret: env.GetString("AUTH_TOKEN_SECRETS", ""),
 				exp: time.Hour * 24 * 2,
 				iss: "ConnectApp Social",
 			},
