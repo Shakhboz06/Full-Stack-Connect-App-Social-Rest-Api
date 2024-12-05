@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/Shakhboz06/Go-project/compare/v1.1.0...v1.2.0) (2024-12-05)
+
+
+### Features
+
+* dockerfile ([ce785fb](https://github.com/Shakhboz06/Go-project/commit/ce785fbf4c7f9f779c0463613fa4f7ac9f79c6a5))
+
 ## [1.1.0](https://github.com/Shakhboz06/Go-project/compare/v1.0.0...v1.1.0) (2024-12-05)
 
 
