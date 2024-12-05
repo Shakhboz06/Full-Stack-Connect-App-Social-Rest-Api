@@ -3,7 +3,7 @@ name: Deploy to Google Cloud Run
 on:
   push:
     branches:
-      - master # Change to the branch you want to trigger deployments from
+      - master # Update to your branch name if needed
 
 permissions:
   contents: read
@@ -25,23 +25,17 @@ jobs:
           service_account_key: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
           export_default_credentials: true
 
-      # Step 3: Authenticate Docker
-      - name: Authenticate Docker with GCP
-        run: |
-          echo ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }} | docker login -u _json_key --password-stdin https://gcr.io
-
-      # Step 4: Build and push Docker image
+      # Step 3: Build and push Docker image
       - name: Build and push Docker image
         run: |
+          gcloud auth configure-docker gcr.io
           docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/connect-app .
           docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/connect-app
 
-      # Step 5: Deploy to Cloud Run
+      # Step 4: Deploy to Cloud Run
       - name: Deploy to Cloud Run
         run: |
           gcloud run deploy connect-app \
             --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/connect-app \
-            --region us-central1 \
             --platform managed \
-            --allow-unauthenticated \
-            --port 5050
+            --allow-unauthenticated
