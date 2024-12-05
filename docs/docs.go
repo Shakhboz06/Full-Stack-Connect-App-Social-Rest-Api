@@ -609,7 +609,8 @@ const docTemplate = `{
             "type": "object",
             "properties": {
                 "content": {
-                    "type": "string"
+                    "type": "string",
+                    "maxLength": 100
                 },
                 "title": {
                     "type": "string",
@@ -657,7 +658,7 @@ const docTemplate = `{
                 "content": {
                     "type": "string"
                 },
-                "createdAt": {
+                "created_at": {
                     "type": "string"
                 },
                 "id": {
@@ -677,7 +678,7 @@ const docTemplate = `{
         "store.Posts": {
             "type": "object",
             "properties": {
-                "comment": {
+                "comments": {
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/store.Comment"
@@ -686,7 +687,7 @@ const docTemplate = `{
                 "content": {
                     "type": "string"
                 },
-                "createdAt": {
+                "created_at": {
                     "type": "string"
                 },
                 "id": {
@@ -701,13 +702,13 @@ const docTemplate = `{
                 "title": {
                     "type": "string"
                 },
-                "updatedAt": {
+                "updated_at": {
                     "type": "string"
                 },
                 "user": {
                     "$ref": "#/definitions/store.Users"
                 },
-                "userID": {
+                "user_id": {
                     "type": "integer"
                 },
                 "version": {
@@ -718,19 +719,19 @@ const docTemplate = `{
         "store.PostswithMetadata": {
             "type": "object",
             "properties": {
-                "comment": {
+                "comment_count": {
+                    "type": "integer"
+                },
+                "comments": {
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/store.Comment"
                     }
                 },
-                "comment_count": {
-                    "type": "integer"
-                },
                 "content": {
                     "type": "string"
                 },
-                "createdAt": {
+                "created_at": {
                     "type": "string"
                 },
                 "id": {
@@ -745,13 +746,13 @@ const docTemplate = `{
                 "title": {
                     "type": "string"
                 },
-                "updatedAt": {
+                "updated_at": {
                     "type": "string"
                 },
                 "user": {
                     "$ref": "#/definitions/store.Users"
                 },
-                "userID": {
+                "user_id": {
                     "type": "integer"
                 },
                 "version": {

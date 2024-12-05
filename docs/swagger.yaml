@@ -32,6 +32,7 @@ definitions:
   main.UpdatePostPayload:
     properties:
       content:
+        maxLength: 100
         type: string
       title:
         maxLength: 100
@@ -65,7 +66,7 @@ definitions:
     properties:
       content:
         type: string
-      createdAt:
+      created_at:
         type: string
       id:
         type: integer
@@ -78,13 +79,13 @@ definitions:
     type: object
   store.Posts:
     properties:
-      comment:
+      comments:
         items:
           $ref: '#/definitions/store.Comment'
         type: array
       content:
         type: string
-      createdAt:
+      created_at:
         type: string
       id:
         type: integer
@@ -94,26 +95,26 @@ definitions:
         type: array
       title:
         type: string
-      updatedAt:
+      updated_at:
         type: string
       user:
         $ref: '#/definitions/store.Users'
-      userID:
+      user_id:
         type: integer
       version:
         type: integer
     type: object
   store.PostswithMetadata:
     properties:
-      comment:
+      comment_count:
+        type: integer
+      comments:
         items:
           $ref: '#/definitions/store.Comment'
         type: array
-      comment_count:
-        type: integer
       content:
         type: string
-      createdAt:
+      created_at:
         type: string
       id:
         type: integer
@@ -123,11 +124,11 @@ definitions:
         type: array
       title:
         type: string
-      updatedAt:
+      updated_at:
         type: string
       user:
         $ref: '#/definitions/store.Users'
-      userID:
+      user_id:
         type: integer
       version:
         type: integer

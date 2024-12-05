@@ -228,7 +228,8 @@ func (s *UserStore) deleteUser(ctx context.Context, tx *sql.Tx, userId int64) er
 
 	_, err := tx.ExecContext(ctx, query, userId)
 
-	ctx, cancel := context.WithTimeout(ctx, QueryTimeoutDuration)
+
+	_, cancel := context.WithTimeout(ctx, QueryTimeoutDuration)
 	defer cancel()
 
 	if err != nil {
