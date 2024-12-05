@@ -28,8 +28,6 @@ func New(addr string, maxOpenConns, maxIdleConns int, maxIdleTime string) (*sql.
 	defer cancel()
 
 
-	err = db.PingContext(ctx)
-
 	if err = db.PingContext(ctx); err != nil {
 		return nil,err
 	}

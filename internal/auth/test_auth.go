@@ -1,7 +1,7 @@
 package auth
 
 import (
-	"time"
+	// "time"
 
 	"github.com/golang-jwt/jwt/v5"
 )
@@ -13,14 +13,14 @@ type TestAuthenticator struct {
 
 const secret = "123"
 
-var testClaims = jwt.MapClaims{
-	"sub": int64(951),
-	"exp": time.Now().Add(time.Hour * 3).Unix(),
-	"iat": time.Now().Unix(),
-	"nbf": time.Now().Unix(),
-	"iss": "test-aus",
-	"aud": "test-aud",
-}
+// var testClaims = jwt.MapClaims{
+// 	"sub": int64(951),
+// 	"exp": time.Now().Add(time.Hour * 3).Unix(),
+// 	"iat": time.Now().Unix(),
+// 	"nbf": time.Now().Unix(),
+// 	"iss": "test-aus",
+// 	"aud": "test-aud",
+// }
 
 func (a *TestAuthenticator) GenerateToken(claims jwt.Claims) (string, error) {
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
