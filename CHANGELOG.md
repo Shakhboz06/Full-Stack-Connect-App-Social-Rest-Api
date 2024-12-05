@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/Shakhboz06/Go-project/compare/v1.0.0...v1.1.0) (2024-12-05)
+
+
+### Features
+
+* auto- update api version ([49e7244](https://github.com/Shakhboz06/Go-project/commit/49e724458467fb3dee3109e1480f8622be304743))
+
 ## 1.0.0 (2024-12-05)
 
 
