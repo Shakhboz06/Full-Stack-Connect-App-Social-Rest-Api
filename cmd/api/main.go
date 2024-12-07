@@ -40,7 +40,7 @@ func main() {
 	
 	cfg := servConfig{
 		addr: env.GetString("ADDR", ":3000"),
-		apiURL: env.GetString("EXTERNAL_URL", "localhost:5050"),
+		apiURL: env.GetString("EXTERNAL_URL", "localhost:8080"),
 		frontendURL: env.GetString("FRONTEND_URL", "http://localhost:3000"),
 		db: dbConfig{
 			addr: env.GetString("DB_ADDR", "postgres://admin:adminpassword@localhost/app?sslmode=disable"),
