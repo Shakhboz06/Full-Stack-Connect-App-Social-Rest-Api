@@ -48,7 +48,7 @@ Caching: Redis
 Email Service: SendGrid
 Containerization: Docker, Docker Compose
 Deployment: Google Cloud Run
-Web Frontend: Vue.js/Nuxt.js (or specify your framework if applicable)
+Web Frontend: Vue.js/Nuxt.js
 CI/CD: GitHub Actions
 Documentation: Swagger UI
 Installation & Setup
