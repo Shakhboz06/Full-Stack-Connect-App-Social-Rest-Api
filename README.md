@@ -97,8 +97,6 @@ web/                # Web frontend source code
 CHANGELOG.md        # Project changelog
 docker-compose.yml  # Docker services configuration
 Dockerfile          # Docker container build file
-go.mod              # Go module dependencies
-go.sum              # Dependency checksums
 Makefile            # Automation commands
 Technologies Used
 Language: Go (Golang)
@@ -159,10 +157,4 @@ Automated workflows are located in the .github/workflows directory and handle:
 
 Build & Test: Automatically run tests on every push or pull request.
 Docker Build: Build and push Docker images.
-Deployment: Deploy to Google Cloud Run upon successful builds and tests.
-
-
-
----
-
-This will display perfectly in Markdown (e.g., GitHub) with proper headings, sections, and table formatting. Let me know if any part needs tweaking! 🚀
+Deployment: Deploy to Google Cloud Run upon successful builds and tests.🚀
