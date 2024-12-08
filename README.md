@@ -1,6 +1,6 @@
 # **Connect App Platform - REST API Service**  
 
-![Go Badge](https://img.shields.io/badge/Go-2.x-blue) ![Docker Badge](https://img.shields.io/badge/Docker-Enabled-blue) ![Postgres Badge](https://img.shields.io/badge/Postgres-Database-green) ![Redis Badge](https://img.shields.io/badge/Redis-Caching-red) ![SendGrid Badge](https://img.shields.io/badge/Email-SendGrid-blue) ![CI/CD Badge](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-blue)
+![Go Badge](https://img.shields.io/badge/Go-1.x-blue) ![Docker Badge](https://img.shields.io/badge/Docker-Enabled-blue) ![Postgres Badge](https://img.shields.io/badge/Postgres-Database-green) ![Redis Badge](https://img.shields.io/badge/Redis-Caching-red) ![SendGrid Badge](https://img.shields.io/badge/Email-SendGrid-blue) ![CI/CD Badge](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-blue)
 
 ---
 
@@ -44,8 +44,8 @@ Connect App Platform is a scalable REST API service built with Go, featuring sec
 
 ## Technologies Used
 
-- **Language**: Go (Golang)  
-- **Database**: PostgreSQL  
+- **Language**: Go  
+- **Database**: PostgreSQL
 - **Caching**: Redis  
 - **Email Service**: SendGrid  
 - **Containerization**: Docker, Docker Compose  
