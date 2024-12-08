@@ -10,8 +10,8 @@ Connect App Platform is a scalable REST API service built with Go, featuring sec
 
 ---
 
-### Documentation Link
-###(https://connect-app-platform-16033377029.europe-west10.run.app/v1/swagger/index.html)
+## [Documentation Link]
+(https://connect-app-platform-16033377029.europe-west10.run.app/v1/swagger/index.html)
 ---
 
 ## Key Features
