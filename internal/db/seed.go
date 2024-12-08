@@ -25,7 +25,9 @@ func Seed(store store.Storage, db *sql.DB) {
 		}
 	}
 
-	posts := generatePosts(10000, users)
+	tx.Commit()
+
+	posts := generatePosts(1000, users)
 
 	for _, post := range posts {
 		if err := store.Posts.Create(ctx, post); err != nil {
@@ -45,9 +47,10 @@ func Seed(store store.Storage, db *sql.DB) {
 	}
 	
 	followers := generateFollowers(1000, users)
-
+	
 	for _, follower := range followers{
 		if err := store.Followers.Follow(ctx, follower.FollowerID, follower.UserID); err != nil {
+			_ = tx.Rollback()
 			log.Println("Error to seed the followers")
 			return
 		}

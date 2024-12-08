@@ -137,7 +137,7 @@ func (app *application) mount() http.Handler {
 			r.Put("/activation/{token}", app.userActivationHandler)
 
 			r.Route("/{userID}", func(r chi.Router) {
-				// r.Use(app.AuthTokenMiddleware)
+				r.Use(app.AuthTokenMiddleware)
 
 				r.Get("/", app.getUserHandler)
 				r.Put("/follow", app.followUserHandler)
