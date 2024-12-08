@@ -1,7 +1,5 @@
-# Load environment variables
 include .envrc
 
-# Define paths and database address
 MIGRATIONS_PATH = ./cmd/migrate/migrations
 DOCKER_MIGRATE = docker run --rm -v "$(CURDIR)/cmd/migrate/migrations:/migrations" --network="host" migrate/migrate:latest
 
