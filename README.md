@@ -10,61 +10,6 @@ Connect App Platform is a scalable REST API service built with Go, featuring sec
 
 ---
 
-## **Key Features**  
-
-- **Authentication & Authorization**: JWT-based authentication with role-based access control for Admins, Moderators, and Users.  
-- **User Management**: Full CRUD operations for user accounts, including registration, login, and role assignment.  
-- **Data Persistence**: PostgreSQL for scalable and secure relational data storage.  
-- **Caching**: Redis caching for frequently requested data and reduced server load.  
-- **Email Notifications**: SendGrid-powered email notifications for account verification, password resets, and more.  
-- **Containerization**: Docker-based deployment for scalability and portability.  
-- **Cloud Deployment**: Google Cloud Run for high availability and performance.  
-- **Web Frontend Integration**: Supports web frontend for user interaction.  
-- **API Documentation**: Comprehensive API documentation using Swagger UI.  
-- **CI/CD Pipelines**: Automated testing, build, and deployment using GitHub Actions.
-
----
-
-## **Project Structure**  
-
-```plaintext
-/project-root
-|-- /cmd                # Main entry points
-|-- /internal           # Core business logic
-|-- /pkg                # Shared packages and helpers
-|-- /api                # REST API routes and controllers
-|-- /configs            # Configuration files
-|-- /migrations         # Database migrations
-|-- /web                # Web frontend code (if applicable)
-|-- /.github            # CI/CD GitHub Actions workflows
-|-- /docker-compose.yml # Docker services configuration
-
-Technologies Used
-Language: Go (Golang)
-Database: PostgreSQL
-Caching: Redis
-Email Service: SendGrid
-Containerization: Docker, Docker Compose
-Deployment: Google Cloud Run
-Web Frontend: Vue.js/Nuxt.js (or specify your framework if applicable)
-CI/CD: GitHub Actions
-Documentation: Swagger UI
-
-
-Here’s the properly formatted README.md in Markdown mode, ensuring the headings and sections display as expected in GitHub and Markdown viewers:
-
-markdown
-Copy code
-# **Connect App Platform - REST API Service**
-
-![Go Badge](https://img.shields.io/badge/Go-1.x-blue) ![Docker Badge](https://img.shields.io/badge/Docker-Enabled-blue) ![Postgres Badge](https://img.shields.io/badge/Postgres-Database-green) ![Redis Badge](https://img.shields.io/badge/Redis-Caching-red) ![SendGrid Badge](https://img.shields.io/badge/Email-SendGrid-blue) ![CI/CD Badge](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-blue)
-
-## Overview
-
-Connect App Platform is a scalable REST API service built with Go, featuring secure user management, role-based access control, and persistent data storage using PostgreSQL. It includes Redis caching, email notifications via SendGrid, Docker containerization, and deployment to Google Cloud Run. The API is complemented by CI/CD pipelines configured with GitHub Actions for automated testing, building, and deployment. A web frontend is also integrated for user interactions.
-
----
-
 ## Key Features
 
 - **Authentication & Authorization**: JWT-based authentication with role-based access control for Admins, Moderators, and Users.
@@ -91,13 +36,11 @@ internal/           # Core business logic
 scripts/            # Scripts for automation and maintenance
 tmp/                # Temporary files
 web/                # Web frontend source code
-.air.toml           # Air live-reload configuration
-.envrc              # Direnv environment configuration
-.gitignore          # Git ignore rules
 CHANGELOG.md        # Project changelog
 docker-compose.yml  # Docker services configuration
 Dockerfile          # Docker container build file
 Makefile            # Automation commands
+
 Technologies Used
 Language: Go (Golang)
 Database: PostgreSQL
