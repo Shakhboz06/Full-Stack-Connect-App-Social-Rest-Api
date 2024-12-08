@@ -7,6 +7,11 @@
 ## **Overview**  
 
 Connect App Platform is a scalable REST API service built with Go, featuring secure user management, role-based access control, and persistent data storage using PostgreSQL. It includes Redis caching, email notifications via SendGrid, Docker containerization, and deployment to Google Cloud Run. The API also supports CI/CD pipelines configured with GitHub Actions for automated testing, building, and deployment.
+Developed a full-stack web application with a Go-based backend, Nuxt.js for a dynamic and responsive frontend, Postgres for database management, and Redis for caching, ensuring seamless user experiences and efficient data handling.
+Deployed the application to Google Cloud Run, utilizing Docker for containerization and CI/CD pipelines for automated builds and deployments, ensuring scalability and reliability in production.
+Integrated robust authentication mechanisms, including JWT-based token authorization and role-based access controls, enhancing security and user management.
+Built a RESTful API with rate-limiting middleware, combined with a modern Nuxt.js frontend, ensuring performance optimization and intuitive navigation, validated through extensive testing using tools like Postman and Swagger.
+
 
 ---
 
